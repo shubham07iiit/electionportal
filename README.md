@@ -1,6 +1,8 @@
 electionportal
 ==============
 Browse through website.
+Open newfront.php
+
 At home page 3 users are registered.
 
 user 1: 
