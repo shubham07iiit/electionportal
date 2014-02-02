@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['Mail']))
+{
+session_destroy();
+unset($_SESSION['Mail']);
+header("location:newfront.php");
+}
+else
+{
+    header('location:newfront.php');
+}
+?>

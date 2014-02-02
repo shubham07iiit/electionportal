@@ -1,0 +1,41 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 02, 2014 at 07:13 AM
+-- Server version: 5.5.24-log
+-- PHP Version: 5.3.13
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `election_portal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contestant`
+--
+
+CREATE TABLE IF NOT EXISTS `contestant` (
+  `cont_id` varchar(10) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `motto` varchar(1000) NOT NULL,
+  `motto_id` varchar(35) NOT NULL,
+  `pos_votes` int(10) NOT NULL,
+  `neg_vote` int(10) NOT NULL,
+  `post_id` varchar(10) NOT NULL,
+  `t_votes` int(10) NOT NULL,
+  PRIMARY KEY (`motto_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contestant`
+--
+
+INSERT INTO `contestant` (`cont_id`, `name`, `motto`, `motto_id`, `pos_votes`, `neg_vote`, `post_id`, `t_votes`) VALUES
+('arun', 'asa', 'assdd', 'arun123', 8, 9, '123', -1),
+('saurabh', 'ass', 'jkhfduigdsfjhsajdgfhjbcbnbvxznbvnbczczmnxbcmnzbmncbmbxcznmxbcnmbznxbcnmbzmxbcjhwebfkjbkdsbfkjshdkjfhkjshfdjkjshjfkds', 'saurabh123', 1, 0, '123', 1);
